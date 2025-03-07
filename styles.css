@@ -70,7 +70,7 @@ h1 {
 
 .change-background-input {
     position: fixed;
-    bottom: 20px;
+    bottom: 125px;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.5);

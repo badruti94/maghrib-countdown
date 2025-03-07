@@ -111,9 +111,4 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     const fileInput = document.getElementById("backgroundInput");
     fileInput.addEventListener("change", changeBackgroundImage);
-    document.body.appendChild(fileInput);
-    fileInput.style.position = "fixed";
-    fileInput.style.bottom = "20px";
-    fileInput.style.left = "50%";
-    fileInput.style.transform = "translateX(-50%)";
 });
