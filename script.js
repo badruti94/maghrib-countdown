@@ -60,7 +60,7 @@ const konversiDetikKeJam = (detik) => {
     const menitStr = String(menit).padStart(2, '0');
     const detikStr = String(detikSisa).padStart(2, '0');
 
-    return `${jamStr} jam, menit ${menitStr}, ${detikStr} detik`;
+    return `${jamStr} jam, ${menitStr} menit, ${detikStr} detik`;
 
 }
 
@@ -109,5 +109,11 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
     }
 
-    document.getElementById("backgroundInput").addEventListener("change", changeBackgroundImage);
+    const fileInput = document.getElementById("backgroundInput");
+    fileInput.addEventListener("change", changeBackgroundImage);
+    document.body.appendChild(fileInput);
+    fileInput.style.position = "fixed";
+    fileInput.style.bottom = "20px";
+    fileInput.style.left = "50%";
+    fileInput.style.transform = "translateX(-50%)";
 });
